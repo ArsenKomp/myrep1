@@ -18,4 +18,4 @@ plt.show()
 country_stats = df.groupby('company_location').agg({'salary': ['mean', 'median'], 'job_title': 'count'})
 country_stats.columns = ['salary', 'median', 'company_size']
 country_stats.sort_values(by='company_size', ascending=False, inplace=True)
-print(country_stats.head())
+print(country_stats.head())# это я внес комментарий
